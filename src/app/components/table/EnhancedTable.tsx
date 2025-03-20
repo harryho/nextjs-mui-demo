@@ -183,13 +183,11 @@ function EnhancedTableToolbar(props: EnhancedTableToolbarProps) {
 
 interface EnhancedTableProps {
     redirectRoute: string;
-    dataSource?: TODO[]
     headCells: Record<string, any>[]
 }
 
 export default function EnhancedTable({
     redirectRoute,
-    dataSource,
     headCells }: EnhancedTableProps) {
     const [notice, setNotice] = useState<{
         open: boolean;
@@ -214,7 +212,7 @@ export default function EnhancedTable({
     }
 
     const table = useTable({
-        redirectRoute: '/orders',
+        redirectRoute: redirectRoute,
         service,
         toggleNotice
     });

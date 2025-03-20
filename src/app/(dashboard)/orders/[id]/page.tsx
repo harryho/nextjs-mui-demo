@@ -59,6 +59,8 @@ function slideTransition(props: SlideProps) {
     return <Slide {...props} direction="up" />;
 }
 
+const redirctRoute="/orders"
+
 export default function OrderEditPage() {
 
     const params = useParams<{ id: string }>();
@@ -104,14 +106,14 @@ export default function OrderEditPage() {
     };
 
     const handleSubmit = (e: React.SyntheticEvent) => {
-        // const handleSubmit = () => {
+
         e.preventDefault();
         if (validateOnSubmit()) {
             values.item = `${values.firstName} ${values.lastName}`
             values.location = `${values.city} ${values.state}`
             console.log(values)
             service.addItem(values);
-            redirect('/orders', RedirectType.replace)
+            redirect(redirctRoute, RedirectType.replace)
         }
     };
 
@@ -125,13 +127,12 @@ export default function OrderEditPage() {
                 Transition: slideTransition
             })
             setTimeout(
-                () => { redirect('/orders', RedirectType.replace) }, 1000)
+                () => { redirect(redirctRoute, RedirectType.replace) }, 1000)
         }
     };
 
     const goBack = (e: React.SyntheticEvent) => {
-        //router.back();
-        redirect("/orders")
+        redirect(redirctRoute)
 
     };
 

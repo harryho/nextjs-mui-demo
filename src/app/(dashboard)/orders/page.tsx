@@ -1,6 +1,4 @@
 import EnhancedTable from "../../components/table/EnhancedTable";
-import * as OrderService from "../../services/orderService";
-
 
 export default function OrdersPage() {
 
