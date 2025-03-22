@@ -1,4 +1,4 @@
-import { _guid,  _posts} from '../_mock';
+import { _guid,  _posts} from '@/app/_mock'
 
 
 const KEYS = {

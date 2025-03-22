@@ -7,8 +7,7 @@ import Grid from '@mui/material//Grid2';
 import Typography from '@mui/material/Typography';
 import Pagination from '@mui/material/Pagination';
 
-import { _posts } from '../../_mock';
-
+import * as service from "@/app/services/blogServices";
 
 
 import { PostItem } from './PostItem';
@@ -24,6 +23,7 @@ export function BlogGridView() {
   const handleSort = useCallback((newSort: string) => {
     setSortBy(newSort);
   }, []);
+  const posts = service.getAllItems();
 
   return (
     <>
@@ -34,7 +34,7 @@ export function BlogGridView() {
         <Button
           variant="contained"
            color="primary"
-        //   startIcon={<Iconify icon="mingcute:add-line" />}
+
           startIcon={<AddAPhoto  />}
 
         >
@@ -43,7 +43,7 @@ export function BlogGridView() {
       </Box>
 
       <Box display="flex" alignItems="center" justifyContent="space-between" sx={{ mb: 5 }}>
-        <PostSearch posts={_posts} />
+        <PostSearch posts={posts} />
         <PostSort
           sortBy={sortBy}
           onSort={handleSort}
@@ -56,7 +56,7 @@ export function BlogGridView() {
       </Box>
 
       <Grid container spacing={3}>
-        {_posts.map((post, index) => {
+        {posts.map((post, index) => {
           const latestPostLarge = index === 0;
           const latestPost = index === 1 || index === 2;
 

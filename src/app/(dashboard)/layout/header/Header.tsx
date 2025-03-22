@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 // components
 import Profile from './Profile';
-// import { IconBellRinging, IconMenu } from '@tabler/icons-react';
+
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -14,10 +14,6 @@ interface ItemType {
 }
 
 const Header = ({toggleMobileSidebar}: ItemType) => {
-
-  // const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
-  // const lgDown = useMediaQuery((theme) => theme.breakpoints.down('lg'));
-
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none',

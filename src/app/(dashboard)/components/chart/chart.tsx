@@ -3,8 +3,6 @@ import dynamic from "next/dynamic";
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import type { BoxProps } from '@mui/material/Box';
 
-// import ApexChart from 'react-apexcharts';
-
 import Box from '@mui/material/Box';
 
 import { chartClasses } from './classes';

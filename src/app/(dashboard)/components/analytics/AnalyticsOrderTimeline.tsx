@@ -11,7 +11,8 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
 
-import { fnDateTime } from '../../../utils/format-time';
+import { fnDateTime } from '@/app/utils/format-time';
+
 
 // ----------------------------------------------------------------------
 

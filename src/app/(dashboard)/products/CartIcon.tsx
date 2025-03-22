@@ -3,11 +3,6 @@ import { useTheme } from '@mui/material/styles';
 
 import Box from '@mui/material/Box';
 import Badge from '@mui/material/Badge';
-// import InputLabel from '@mui/material/InputLabel';
-
-// import { RouterLink } from '../../routes/components';
-
-
 import { ShoppingCart } from '@mui/icons-material';
 
 
@@ -44,7 +39,7 @@ export function CartIcon({ totalItems, sx, ref, ...other }: Props) {
       {...other}
     >
       <Badge showZero badgeContent={totalItems} color="error" max={99}>
-        {/* <Iconify icon="solar:cart-3-bold" width={24} /> */}
+
         <ShoppingCart />
       </Badge>
     </Box>

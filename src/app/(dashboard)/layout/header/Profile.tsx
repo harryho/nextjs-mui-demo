@@ -11,7 +11,6 @@ import {
   ListItemText,
 } from "@mui/material";
 
-// import { IconListCheck, IconMail, IconUser } from "@tabler/icons-react";
 import ChecklistIcon from '@mui/icons-material/Checklist';
 import MailIcon from '@mui/icons-material/Mail';
 import PersonIcon from '@mui/icons-material/Person';

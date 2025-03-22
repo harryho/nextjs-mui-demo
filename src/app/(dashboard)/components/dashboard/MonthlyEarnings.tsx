@@ -3,8 +3,6 @@ import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { useTheme } from '@mui/material/styles';
 import { Stack, Typography, Avatar, Fab } from '@mui/material';
-// import { IconArrowDownRight, IconCurrencyDollar } from '@tabler/icons-react';
-// import SouthEastOutlinedIcon from '@mui/icons-material/SouthEastOutlined';
 import SouthEastIcon from '@mui/icons-material/SouthEast';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import DashboardCard from '@/app/(dashboard)/components/shared/DashboardCard';

@@ -1,8 +1,7 @@
 import { useTheme } from '@mui/material/styles';
-
-import { varAlpha } from '../theme/styles';
-import { grey } from '../theme/core/palette';
 import type { ChartOptions } from './types';
+import { grey } from '@/app/(dashboard)/components/theme/core/palette';
+import { varAlpha } from '../theme/styles';
 
 
 // ----------------------------------------------------------------------
@@ -214,7 +213,7 @@ export function useChart(options?: ChartOptions): ChartOptions {
         ...options?.legend?.markers,
       },
       labels: {
-        colors: theme.vars.palette.text.primary,
+        colors: theme.palette.text.primary,
         ...options?.legend?.labels,
       },
       itemMargin: {

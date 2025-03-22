@@ -1,17 +1,5 @@
-// import {
-//   IconAperture,
-//   IconCopy,
-//   IconLayoutDashboard,
-//   IconLogin,
-//   IconMoodHappy,
-//   IconTypography,
-//   IconUserPlus,
-// } from "@tabler/icons-react";
-import CameraIcon from '@mui/icons-material/Camera';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import LoginIcon from '@mui/icons-material/Login';
-import MoodIcon from '@mui/icons-material/Mood';
 import MarginIcon from '@mui/icons-material/Margin';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';

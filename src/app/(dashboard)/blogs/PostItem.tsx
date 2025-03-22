@@ -6,15 +6,16 @@ import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
-import { fnDate } from '../../utils/format-time';
-import { fnShortenNumber } from '../../utils/format-number';
+import { fnDate } from '@/app/utils/format-time';
 
-import { varAlpha } from '../components/theme/styles';
-
-
-import { SvgColor } from '../components/svg-color';
-import { lightPalette as palette } from '../components/theme/core'
 import { InfoOutlined } from '@mui/icons-material';
+import { fnShortenNumber } from '@/app/utils/format-number';
+import { varAlpha } from '../components/theme/styles/utils';
+import { grey } from '../components/theme/core/palette';
+import { SvgColor } from '../components/svg-color';
+
+
+
 
 // ----------------------------------------------------------------------
 
@@ -108,7 +109,7 @@ export function PostItem({
             }),
           }}
         >
-          {/* <Iconify width={16} icon={info.icon} sx={{ mr: 0.5 }} /> */}
+
           <InfoOutlined />
           <Typography variant="caption">{fnShortenNumber(info.number)}</Typography>
         </Box>
@@ -179,7 +180,7 @@ export function PostItem({
               width: '100%',
               height: '100%',
               position: 'absolute',
-              bgcolor: varAlpha(palette.grey['900Channel'], 0.72),
+              bgcolor: varAlpha(grey['900Channel'], 0.72),
             },
           }),
           ...(latestPostLarge && {

@@ -6,9 +6,8 @@ import Button from '@mui/material/Button';
 import Popover from '@mui/material/Popover';
 import MenuList from '@mui/material/MenuList';
 import MenuItem, { menuItemClasses } from '@mui/material/MenuItem';
-
-import { varAlpha } from '../components/theme/styles';
-import { lightPalette as palette } from '../components/theme/core';
+import { grey } from '../components/theme/core/palette';
+import { varAlpha } from '../components/theme/styles/utils';
 import { ArrowDropUpOutlined } from '@mui/icons-material';
 
 
@@ -51,7 +50,7 @@ export function PostSort({ options, sortBy, onSort, sx, ...other }: PostSortProp
         endIcon = {endIcon}
         sx={{
           // bgcolor: (theme) => varAlpha(theme.vars.palette.grey['500Channel'], 0.08),
-          bgcolor: (theme) => varAlpha(palette.grey['500Channel'], 0.08),
+          bgcolor: (theme) => varAlpha(grey['500Channel'], 0.08),
           ...sx,
         }}
         {...other}

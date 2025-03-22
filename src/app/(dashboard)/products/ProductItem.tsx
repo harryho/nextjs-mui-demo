@@ -3,12 +3,10 @@ import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
-import { fnCurrency } from '../../utils/format-number';
-
-import { Label } from '../components/label';
-// import Label from '@mui/material/InputLabel';
+import { fnCurrency } from '@/app/utils/format-number';
+import { Label } from '@mui/icons-material';
 import { ColorPreview } from '../components/color-utils';
+
 
 // ----------------------------------------------------------------------
 

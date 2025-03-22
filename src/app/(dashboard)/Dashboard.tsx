@@ -11,7 +11,7 @@ import MonthlyEarnings from '@/app/(dashboard)/components/dashboard/MonthlyEarni
 import AnalyticsWidgetSummary from '@/app/(dashboard)/components/analytics/AnalyticsWidgetSummary';
 import AnalyticsConversionRates from './components/analytics/AnalyticsConversionRates';
 import AnalyticsOrderTimeline from './components/analytics/AnalyticsOrderTimeline';
-import { _timeline } from '../_mock/_data';
+import { _timeline } from '@/app/_mock/_data';
 
 const Dashboard = () => {
   return (

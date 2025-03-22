@@ -28,10 +28,10 @@ import { TransitionProps } from '@mui/material/transitions';
 import { Chip, Fade, InputAdornment, MenuItem, menuItemClasses, MenuList, OutlinedInput, Popover } from '@mui/material';
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
 import SearchIcon from '@mui/icons-material/Search';
-import SnapNotice from '../controls/SnapNotice';
+import * as service from "@/app/services/orderService";
 import { useCallback, useState } from 'react';
-import * as service from "../../services/orderService";
-import { useDialogs } from '@toolpad/core';
+
+import SnapNotice from '../controls/SnapNotice';
 
 const OrderStatus: { [k: string]: string } = {
     "packing": "Packing",
@@ -157,7 +157,7 @@ function EnhancedTableToolbar(props: EnhancedTableToolbarProps) {
                     placeholder="Search user..."
                     startAdornment={
                         <InputAdornment position="start">
-                            {/* <Iconify width={20} icon="eva:search-fill" sx={{ color: 'text.disabled' }} /> */}
+
                             <SearchIcon fontSize='small' color='info' />
                         </InputAdornment>
                     }
@@ -202,7 +202,6 @@ export default function EnhancedTable({
     });
     const [openPopover, setOpenPopover] = useState<HTMLButtonElement | null>(null);
     const [dataId, setDataId] = useState("");
-    const dialogs = useDialogs();
 
     const toggleNotice = (open: boolean) => {
         setNotice({

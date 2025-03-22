@@ -1,6 +1,5 @@
 import { useMediaQuery, Box, Drawer } from "@mui/material";
 import SidebarItems from "./SidebarItems";
-// import { Upgrade } from "./Updrade";
 import { Sidebar } from 'react-mui-sidebar';
 import Logo from "@/app/(dashboard)/layout/shared/logo/Logo";
 

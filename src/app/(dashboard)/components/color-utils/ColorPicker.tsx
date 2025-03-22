@@ -6,10 +6,10 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ButtonBase from '@mui/material/ButtonBase';
 import { alpha as hexAlpha } from '@mui/material/styles';
-import { lightPalette as palette } from '../theme/core/palette';
+import { lightPalette as palette } from '@/app/(dashboard)/components/theme/core/palette';
 import { varAlpha } from '../theme/styles';
 
-// import { Iconify } from '../iconify';
+
 
 import type { ColorPickerProps } from './types';
 import { CheckCircle } from '@mui/icons-material';

@@ -1,10 +1,9 @@
 'use client'
 import React from "react";
-import { useForm } from "../../../components/form/use-form";
+import { useForm } from "@/app/components/form/use-form";
 import Input from "../../../components/controls/Input";
-import * as service from "../../../services/orderService";
-import CheckboxGenerator from "../../../components/controls/Checkbox";
-import ButtonGenerator from "../../../components/controls/Button";
+import * as service from "@/app/services/orderService";
+
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid2";
 import {
@@ -14,6 +13,8 @@ import { redirect, RedirectType, useParams } from 'next/navigation';
 import Slide, { SlideProps } from '@mui/material/Slide';
 import Fade from '@mui/material/Fade';
 import { TransitionProps } from "@mui/material/transitions";
+import ButtonGenerator from "@/app/components/controls/Button";
+import CheckboxGenerator from "@/app/components/controls/Checkbox";
 
 
 const initialFieldValues: Order = {

@@ -1,4 +1,4 @@
-import EnhancedTable from "../../components/table/EnhancedTable";
+import EnhancedTable from '@/app/components/table/EnhancedTable';
 
 export default function OrdersPage() {
 

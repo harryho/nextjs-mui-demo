@@ -10,7 +10,6 @@ declare type TODO = any
 declare module "@emotion/styled" {
     import { CreateStyled } from '@emotion/styled/types/index';
 
-    import { MyTheme } from '../../src/myTheme';
     export * from '@emotion/styled/types/index';
     const customStyled: CreateStyled<MyTheme>;
     export default customStyled;

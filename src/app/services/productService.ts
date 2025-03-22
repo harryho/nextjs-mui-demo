@@ -1,4 +1,4 @@
-import { _guid,  _products } from '../_mock';
+import { _guid,  _products } from '@/app/_mock';
 
 
 const KEYS = {

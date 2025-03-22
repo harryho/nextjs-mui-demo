@@ -12,11 +12,9 @@ import RadioGroup from '@mui/material/RadioGroup';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-// import { Iconify } from '../iconify';
-import { Scrollbar } from '../components/scrollbar';
+import { CloseOutlined, FilterList, Refresh } from '@mui/icons-material';
 import { ColorPicker } from '../components/color-utils';
-import { CloseOutlined, FilterList, FormatListNumberedOutlined, Refresh } from '@mui/icons-material';
+import { Scrollbar } from '../components/scrollbar';
 
 // ----------------------------------------------------------------------
 
@@ -174,7 +172,7 @@ export function ProductFilters({
         color="inherit"
         endIcon={
           <Badge color="error" variant="dot" invisible={!canReset}>
-            {/* <Iconify icon="ic:round-filter-list" /> */}
+
             <FilterList />
           </Badge>
         }
@@ -198,13 +196,13 @@ export function ProductFilters({
 
           <IconButton onClick={onResetFilter}>
             <Badge color="error" variant="dot" invisible={!canReset}>
-              {/* <Iconify icon="solar:refresh-linear" /> */}
+
               <Refresh />
             </Badge>
           </IconButton>
 
           <IconButton onClick={onCloseFilter}>
-            {/* <Iconify icon="mingcute:close-line" /> */}
+
             <CloseOutlined />
           </IconButton>
         </Box>

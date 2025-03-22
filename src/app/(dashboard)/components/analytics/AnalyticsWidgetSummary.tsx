@@ -1,17 +1,17 @@
 import type { CardProps } from '@mui/material/Card';
-import type { ColorType } from '../theme/core/palette';
-import type { ChartOptions } from '../chart';
+import type { ColorType } from '@/app/(dashboard)/components/theme/core/palette';
+import type { ChartOptions } from '@/app/(dashboard)/components/chart';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
 
-import { fnNumber, fnPercent, fnShortenNumber } from '../../../utils/format-number';
-import { lightPalette as palette } from '../theme/core/palette';
-import { varAlpha, bgGradient } from '../theme/styles';
+import { fnNumber, fnPercent, fnShortenNumber } from '@/app/utils/format-number';
+import { lightPalette as palette } from '@/app/(dashboard)/components/theme/core/palette';
+import { varAlpha, bgGradient } from '@/app/(dashboard)/components/theme/styles';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import { SvgColor } from '../svg-color';
-import { Chart, useChart } from '../chart';
+import { Chart, useChart } from '@/app/(dashboard)/components/chart';
 
 // ----------------------------------------------------------------------
 
@@ -71,7 +71,7 @@ export default function AnalyticsWidgetSummary({
         alignItems: 'center',
       }}
     >
-      {/* <Iconify width={20} icon={percent < 0 ? 'eva:trending-down-fill' : 'eva:trending-up-fill'} /> */}
+
       <TrendingDownIcon />
       <Box component="span" sx={{ typography: 'subtitle2' }}>
         {percent > 0 && '+'}

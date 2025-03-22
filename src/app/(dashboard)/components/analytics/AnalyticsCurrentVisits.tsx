@@ -1,14 +1,14 @@
 import type { CardProps } from '@mui/material/Card';
-import type { ChartOptions } from '../chart';
+import type { ChartOptions } from '@/app/(dashboard)/components/chart';
 
 import Card from '@mui/material/Card';
 import Divider from '@mui/material/Divider';
 import { useTheme } from '@mui/material/styles';
 import CardHeader from '@mui/material/CardHeader';
 
-import { fnNumber } from '../../../utils/format-number';
+import { fnNumber } from '@/app/utils/format-number';
 
-import { Chart, useChart, ChartLegends } from '../chart';
+import { Chart, useChart, ChartLegends } from '@/app/(dashboard)/components/chart';
 
 // ----------------------------------------------------------------------
 
